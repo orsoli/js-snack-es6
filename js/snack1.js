@@ -19,6 +19,12 @@ const tableName = "VIP"; // The name of vip guest table
 
 // Define functions
 //Create a function who gerate a card in required format
+/**
+ *
+ * @param {string} g // This string get from array method
+ * @param {number} i // This number get from array method
+ * @returns {object} // Return an object in specific format
+ */
 const createCards = (g, i) => {
   const guestCard = {
     tableName,
