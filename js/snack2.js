@@ -29,13 +29,13 @@ const getNameStudent = (n) => {
  * @param {string} g // This string get from method
  * @returns  {boolean} // Return true
  */
-const isHigher = (g) => g.grades > 70;
+const isHigher = (g) => g.grades > 70 && g.id > 120;
 
 // Use forEach method to get a list name of students
 const nameStudents = students.forEach(getNameStudent, this);
 
 // Use filter method filter all students and to return his value based in condition
-const studentsHigher70 = students.filter(isHigher);
+const studentsHigher = students.filter(isHigher);
 // --- Output Phase
 console.log(listNameStudents); // Print in console list Name of Students
-console.log(studentsHigher70); // Print in console list Name of Students
+console.log(studentsHigher); // Print in console list Name of Students

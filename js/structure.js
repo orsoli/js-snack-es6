@@ -34,3 +34,6 @@
 // Create a function returning a boolean in condition:  grade > 70.
 // Use Filter method callind this function to get the students based on condition
 // Print in console name of this filter method
+
+// 3.
+// Added in higher existing function one more consition id > 120
