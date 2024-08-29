@@ -32,7 +32,7 @@ const getNameStudent = (n) => {
 const isHigher = (g) => g.grades > 70 && g.id > 120;
 
 // Use forEach method to get a list name of students
-const nameStudents = students.forEach(getNameStudent, this);
+students.forEach(getNameStudent);
 
 // Use filter method filter all students and to return his value based in condition
 const studentsHigher = students.filter(isHigher);
