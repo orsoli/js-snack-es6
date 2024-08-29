@@ -38,4 +38,13 @@ students.forEach(getNameStudent);
 const studentsHigher = students.filter(isHigher);
 // --- Output Phase
 console.log(listNameStudents); // Print in console list Name of Students
-console.log(studentsHigher); // Print in console list Name of Students
+// console.log(studentsHigher); // Print in console list Name of Students
+
+//TODO Using reduce() method
+// Use reduce() method get 2 arguments: 1. function if condition is true student object add in acc array, 2.As an initial value is an empty array
+const higherStudents = students.reduce((acc, s) => {
+  if (s.grades > 70 && s.id > 120) acc.push(s); // Condition if grades of students are higher than 70 and id higher than 120 push student in acc
+  return acc; // Return the result
+}, []);
+
+console.log(higherStudents); // Print in console the list of students who meets conditions
