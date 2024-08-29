@@ -18,13 +18,24 @@ const listNameStudents = [];
  *
  * @param {string} g // This string get from array method
  */
-const getNameStudent = (g) => {
-  const name = g.name.toUpperCase(); // UpperCase the name
+const getNameStudent = (n) => {
+  const name = n.name.toUpperCase(); // UpperCase the name
   listNameStudents.push(name); // Push in array
 };
 
-// Use forEach method to get a list name of students
-const nameStudents = students.forEach(getNameStudent);
+// Create a function check if grade > 70 and return boolean
+/**
+ *
+ * @param {string} g // This string get from method
+ * @returns  {boolean} // Return true
+ */
+const isHigher = (g) => g.grades > 70;
 
+// Use forEach method to get a list name of students
+const nameStudents = students.forEach(getNameStudent, this);
+
+// Use filter method filter all students and to return his value based in condition
+const studentsHigher70 = students.filter(isHigher);
 // --- Output Phase
 console.log(listNameStudents); // Print in console list Name of Students
+console.log(studentsHigher70); // Print in console list Name of Students

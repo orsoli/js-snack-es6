@@ -21,11 +21,16 @@
         We have a list of students from a University, identified by ID, Name, and their total exam grades.
         To prepare the classroom for a new course, 
         - We need to print the name tags of the students: 
-        - Create a list containing their names all in uppercase.
-        - We need to create a list of all students who have a total grade higher than 70.
-        - We need to create a list of all students who have a total grade higher than 70 and an ID higher than 120.
+        1- Create a list containing their names all in uppercase.
+        2- We need to create a list of all students who have a total grade higher than 70.
+        3- We need to create a list of all students who have a total grade higher than 70 and an ID higher than 120.
 */
-
+// 1.
 // Create a array variable variable containing given object list of students
 // Create a function returning list names of student in UPPERCASE
 // Create array method to call this function for each student
+
+// 2.
+// Create a function returning a boolean in condition:  grade > 70.
+// Use Filter method callind this function to get the students based on condition
+// Print in console name of this filter method
