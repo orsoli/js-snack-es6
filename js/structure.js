@@ -10,3 +10,9 @@ so we need to ensure that each guest is a JavaScript object with the following p
 
 Generate and print the list for the place cards in the console.
 */
+
+// Create a variables already know : array variable  guestList with names of guest
+// Create a string variable with name of table
+// Create an arrow function return an object with required properties in required format
+// Create an array method to call the function for each guest
+// Print in console card list
