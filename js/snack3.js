@@ -8,8 +8,8 @@ const raceBikes = [
   { name: "BMC Teammachine", weight: 6.8 },
 ];
 
-//Retrieve the interested elements from dom
-const containerElements = document.querySelector(".container");
+// Retrieve the interested elements from DOM
+const cardContainerElement = document.getElementById("card-container");
 // Use an reduce() method to check smallest weight bike initialized from the first object in raceBikes
 
 const smallestBike = raceBikes.reduce((acc, { weight }) => {
@@ -20,14 +20,12 @@ const smallestBike = raceBikes.reduce((acc, { weight }) => {
 // --- Processing phase
 console.log(smallestBike); // Print in console Bike smaller weight
 
-containerElements.innerHTML = `
-    <div class="row justify-content-center text-center my-5">
-            <div class="col col-6">
-                <div class="card border-1 shadow">
-                    <img src="img/original-7b5ebc7218214ba6c1056219dd4841a4.png" alt="">
-                    <h5 class='mt-3'><em class='fs-6'>Sport Bike:</em> ${smallestBike.name}</h5>
-                    <p>weight: ${smallestBike.weight} kg</p>
-                </div>
-            </div>
-        </div>
+cardContainerElement.innerHTML = `
+          <div class="col col-6">
+              <div class="card border-1 shadow">
+                  <img src="img/original-7b5ebc7218214ba6c1056219dd4841a4.png" alt="">
+                  <h5 class='mt-3'><em class='fs-6'>Sport Bike:</em> ${smallestBike.name}</h5>
+                  <p>weight: ${smallestBike.weight} kg</p>
+              </div>
+          </div>
 `;

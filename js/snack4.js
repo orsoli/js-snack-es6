@@ -10,6 +10,9 @@ const teams = [
   { name: "Liverpool", points: 0, foults: 0 },
   { name: "PSG", points: 0, foults: 0 },
 ];
+
+// Retrieve the interested elements from DOM
+const cardContainerElement = document.getElementById("card-container");
 // Create variables for rendom numbers
 const max = 100;
 const min = 1;
@@ -24,7 +27,18 @@ const generateRandomNumber = (max, min) =>
 const teamResult = teams.map(({ name, points, foults }) => {
   points = generateRandomNumber(max, min); // Compleat points with random number
   foults = generateRandomNumber(max, min); // Compleat foults with random number
+  // Print in page the results
+  cardContainerElement.innerHTML += `
+          <div class="col">
+              <div class="card border-1 shadow rounded-3">
+                  <img src="https://cdn.dribbble.com/userupload/15239462/file/original-6c18f5cdf66be0e25f1f8f08066412c7.jpg?resize=1200x1200"
+                      alt="">
+                  <h5 class="mt-2">${name}</h5>
+                  <p>Foults: ${foults}</p>
+              </div>
+          </div>
+  `;
   return { name, foults }; // return an object with 2 properties : name and foult
 });
 
-console.log(teamResult);
+console.log(teamResult); // Print in console the result
