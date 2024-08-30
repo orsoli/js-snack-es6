@@ -17,13 +17,15 @@
 // Create an array method to call the function for each guest
 // Print in console card list
 
+//? ---------
+
 /* SNACK 2
-        We have a list of students from a University, identified by ID, Name, and their total exam grades.
-        To prepare the classroom for a new course, 
-        - We need to print the name tags of the students: 
-        1- Create a list containing their names all in uppercase.
-        2- We need to create a list of all students who have a total grade higher than 70.
-        3- We need to create a list of all students who have a total grade higher than 70 and an ID higher than 120.
+We have a list of students from a University, identified by ID, Name, and their total exam grades.
+To prepare the classroom for a new course, 
+- We need to print the name tags of the students: 
+1- Create a list containing their names all in uppercase.
+2- We need to create a list of all students who have a total grade higher than 70.
+3- We need to create a list of all students who have a total grade higher than 70 and an ID higher than 120.
 */
 // 1.
 // Create a array variable variable containing given object list of students
@@ -37,3 +39,28 @@
 
 // 3.
 // Added in higher existing function one more consition id > 120
+
+//? ---------
+
+/*SNACK 3
+        Create an array of objects:
+        Each object will describe a racing bike with the following properties: name and weight.
+        Print to the console the bike with the smallest weight using destructuring and template literal.
+
+*/
+
+//?-------
+
+/*SNACK 4
+        Create an array of football teams objects.
+        Each team will have properties: name, points scored, fouls conceded.
+        The name will be the only property to be filled in, the others will all be set to 0.
+        Generate random numbers instead of the 0s in the properties: points scored and fouls.
+        Finally, using destructuring, create a new array whose elements contain only names and fouls and print everything to the console.
+*/
+
+// Create teams object array
+// Create variables i need
+// Define functions
+// Use a method using desctructuring  to compleat points and foult, and return object with names and foults
+// Print in console
