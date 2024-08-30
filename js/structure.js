@@ -49,6 +49,10 @@ To prepare the classroom for a new course,
 
 */
 
+// Use an reduce() method to check smallest weight bike, initializeed from the first object
+// Craete the condition
+// Print in console
+
 //?-------
 
 /*SNACK 4
