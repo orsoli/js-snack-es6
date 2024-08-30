@@ -68,3 +68,13 @@ To prepare the classroom for a new course,
 // Define functions
 // Use a method using desctructuring  to compleat points and foult, and return object with names and foults
 // Print in console
+
+//?-------
+
+/*BONUS
+        Print in page the results
+*/
+
+// Preapare html
+// Retrieve elements from dom
+// Append the result in elemnts
