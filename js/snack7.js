@@ -23,4 +23,6 @@ const newListPersons = persons.map(({ firstName, lastName, age }) =>
     : (description = `${firstName} ${lastName} cant drive because is minoren age ${age} years old`)
 );
 
-console.log(newListPersons);
+// Processing phase
+
+console.log(newListPersons); // print in console
