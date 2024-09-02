@@ -22,14 +22,9 @@ const animals = [
 
 // Use filter() method throwgh each animal object and return new array object based in our condition
 
-const mammalsAnimals = animals.filter(({ name, family, animalClass }) => {
-  if (animalClass == "mammals")
-    return {
-      name,
-      family,
-      animalClass,
-    };
-});
+const mammalsAnimals = animals.filter(
+  ({ animalClass }) => animalClass === "mammals"
+);
 
 //--- Processing phase
 console.log(mammalsAnimals);
