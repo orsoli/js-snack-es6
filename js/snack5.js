@@ -11,7 +11,7 @@ const names = ["orsol", "francesco", "MARCO", "ALESSIO", "andrea"];
 //--- Processing phase
 const capitalizedNames = names.map(
   // Get first character and convert in uppercase, and slice the rest started from character 1 and convert in lowercase.
-  (name) => name.charAt(0).toUpperCase() + name.slice(1).toLocaleLowerCase()
+  (name) => name.charAt(0).toUpperCase() + name.slice(1).toLowerCase()
 );
 
 console.log(capitalizedNames); // Print in console new array
